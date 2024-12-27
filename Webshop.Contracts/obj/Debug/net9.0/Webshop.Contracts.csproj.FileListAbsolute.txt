@@ -1,0 +1,11 @@
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\bin\Debug\net9.0\Webshop.Contracts.deps.json
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\bin\Debug\net9.0\Webshop.Contracts.dll
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\bin\Debug\net9.0\Webshop.Contracts.pdb
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.AssemblyInfoInputs.cache
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.AssemblyInfo.cs
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.dll
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\refint\Webshop.Contracts.dll
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.pdb
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\ref\Webshop.Contracts.dll
