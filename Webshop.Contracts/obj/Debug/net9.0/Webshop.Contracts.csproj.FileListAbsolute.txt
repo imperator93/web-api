@@ -9,3 +9,4 @@ C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contr
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\refint\Webshop.Contracts.dll
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.pdb
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\ref\Webshop.Contracts.dll
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Contracts\obj\Debug\net9.0\Webshop.Contracts.sourcelink.json

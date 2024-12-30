@@ -33,3 +33,4 @@ C:\Users\stoja\PROJECTS\Webshop\Webshop.Api\obj\Debug\net9.0\refint\Webshop.Api.
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Api\obj\Debug\net9.0\Webshop.Api.pdb
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Api\obj\Debug\net9.0\Webshop.Api.genruntimeconfig.cache
 C:\Users\stoja\PROJECTS\Webshop\Webshop.Api\obj\Debug\net9.0\ref\Webshop.Api.dll
+C:\Users\stoja\PROJECTS\Webshop\Webshop.Api\obj\Debug\net9.0\Webshop.Api.sourcelink.json
