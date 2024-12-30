@@ -11,7 +11,7 @@ const mazda = {
 }
 
 // GET
-// fetch("http://localhost:5233/products/3956").then(res => res.json()).then(data => console.log(data));
+// fetch("http://localhost:5233/products/5024").then(res => res.json()).then(data => console.log(data));
 
 // POST
 
@@ -24,7 +24,7 @@ const mazda = {
 // }).then(response => response.json()).then(data => console.log(data))
 
 //UPDATE
-// fetch("http://localhost:5233/products/3956", {
+// fetch("http://localhost:5233/products/5024", {
 //     method: "PUT",
 //     headers: {
 //         "content-type": "application/json"
@@ -33,6 +33,6 @@ const mazda = {
 // }).then(response => response.json()).then(data => console.log(data))
 
 //DELETE
-fetch("http://localhost:5233/products/3956", {
-    method: "DELETE",
-}).then(response => response.json()).then(data => console.log(data))
+// fetch("http://localhost:5233/products/5024", {
+//     method: "DELETE",
+// }).then(response => response.json()).then(data => console.log(data))

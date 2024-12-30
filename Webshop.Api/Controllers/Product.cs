@@ -23,7 +23,7 @@ public class ProductController : ControllerBase
     {
         Product? product = DatabaseApi.ReadFromFile(id);
         ProductResponse response = new(Id: product!.Id, Name: product.Name, Price: product.Price, Descriptions: product.Descriptions);
-        return Ok(id);
+        return Ok(response);
     }
 
     [HttpPut("products/{id:int}")]
