@@ -6,35 +6,48 @@ using System.Text.Json;
 
 public static class DatabaseApi
 {
-    static List<Product> GetListFromFile()
+    public static List<Product>? GetListFromFile()
     {
-        string listJson = File.ReadAllText(Path);
-        return JsonSerializer.Deserialize<List<Product>>(listJson)!;
+        try
+        {
+            string listJson = File.ReadAllText(Path);
+            return JsonSerializer.Deserialize<List<Product>>(listJson)!;
+        }
+        catch (Exception) { return null; }
     }
     private static readonly string Path = "C:\\Users\\stoja\\PROJECTS\\Webshop\\Webshop.Api\\Database\\Products.txt";
     public static void WriteOrUpdateToFile(Product product, string action)
     {
         if (!File.Exists(Path) || new FileInfo(Path).Length == 0)
         {
-            List<Product> products = [];
-            products.Add(product);
-            string productsJson = JsonSerializer.Serialize(products);
-            File.WriteAllText(Path, productsJson);
+            try
+            {
+
+                List<Product> products = [];
+                products.Add(product);
+                string productsJson = JsonSerializer.Serialize(products);
+                File.WriteAllText(Path, productsJson);
+            }
+            catch (Exception) { }
         }
         else
         {
-            List<Product>? products = GetListFromFile();
-
-            if (action == "CREATE")
-                products!.Add(product);
-            else if (action == "UPDATE")
+            try
             {
-                int index = products!.FindIndex(item => item.Id == product.Id);
-                products[index] = product;
-            }
+                List<Product>? products = GetListFromFile();
 
-            string updatedProductsJson = JsonSerializer.Serialize(products);
-            File.WriteAllText(Path, updatedProductsJson);
+                if (action == "CREATE")
+                    products!.Add(product);
+                else if (action == "UPDATE")
+                {
+                    int index = products!.FindIndex(item => item.Id == product.Id);
+                    products[index] = product;
+                }
+
+                string updatedProductsJson = JsonSerializer.Serialize(products);
+                File.WriteAllText(Path, updatedProductsJson);
+            }
+            catch (Exception) { }
         }
     }
 
@@ -42,9 +55,13 @@ public static class DatabaseApi
     {
         if (File.Exists(Path))
         {
-            List<Product> products = GetListFromFile();
-            Product? product = products!.Find(item => item.Id == id);
-            return product;
+            try
+            {
+                List<Product>? products = GetListFromFile();
+                Product? product = products!.Find(item => item.Id == id);
+                return product;
+            }
+            catch (Exception) { return null; }
         }
         else return null;
     }
@@ -53,11 +70,11 @@ public static class DatabaseApi
     {
         try
         {
-            List<Product> products = GetListFromFile();
-            products.RemoveAt(products.FindIndex(item => item.Id == id));
+            List<Product>? products = GetListFromFile();
+            products?.RemoveAt(products.FindIndex(item => item.Id == id));
             File.WriteAllText(Path, JsonSerializer.Serialize(products));
         }
-        catch (Exception ex) { System.Console.WriteLine(ex); }
+        catch (Exception) { }
     }
 
 }

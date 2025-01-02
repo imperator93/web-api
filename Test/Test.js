@@ -11,10 +11,9 @@ const mazda = {
 }
 
 // GET
-// fetch("http://localhost:5233/products/5024").then(res => res.json()).then(data => console.log(data));
+fetch("http://localhost:5233/products").then(res => res.json()).then(data => console.log(data));
 
 // POST
-
 // fetch("http://localhost:5233/products", {
 //     method: "POST",
 //     headers: {
